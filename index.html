@@ -22,9 +22,9 @@
     footer { background:#0a3d62; color:white; text-align:center; padding:10px; }
     .whatsapp {
       position:fixed; bottom:20px; right:20px;
-      background:#25D366; color:white; padding:15px;
-      border-radius:50%; text-decoration:none; font-size:20px;
+      text-decoration:none;
     }
+    .whatsapp img { height:50px; width:50px; }
     form { display:flex; flex-direction:column; gap:10px; max-width:400px; margin:auto; }
     input, textarea { padding:10px; border:1px solid #ccc; border-radius:4px; }
     button { background:#0a3d62; color:white; padding:10px; border:none; border-radius:4px; cursor:pointer; }
@@ -102,6 +102,8 @@
   </footer>
 
   <!-- WhatsApp Floating Button -->
-  <a class="whatsapp" href="https://wa.me/60123456789" target="_blank">💬</a>
+  <a class="whatsapp" href="https://wa.me/60123456789" target="_blank">
+    <img src="whatsapp.png" alt="WhatsApp">
+  </a>
 </body>
 </html>
