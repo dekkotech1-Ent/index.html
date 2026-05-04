@@ -1,12 +1,107 @@
-<header style="background:#e74c3c; color:white; padding:20px; display:flex; align-items:center; justify-content:space-between;">
-  <!-- Logo syarikat -->
-  <div style="display:flex; align-items:center; gap:15px;">
-    <img src="assets/images/logo.png" alt="Logo DEKKO TECH" style="height:60px;">
-    <h1 style="margin:0; font-size:24px;">DEKKO TECH ENTERPRISE</h1>
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEKKO TECH ENTERPRISE</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#f9f9f9; }
+    header { background:#e74c3c; color:white; padding:15px 30px; display:flex; align-items:center; justify-content:space-between; }
+    header img { height:60px; }
+    nav a { color:white; text-decoration:none; margin:0 10px; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+    .book-btn {
+      background:white; color:#e74c3c; padding:8px 15px;
+      border-radius:4px; text-decoration:none; font-weight:bold;
+    }
+    .book-btn:hover { background:#f1f1f1; }
+    .hero { text-align:center; padding:20px; }
+    .hero img { max-width:100%; border-radius:8px; }
+    .services { display:flex; flex-wrap:wrap; gap:20px; padding:20px; }
+    .card { flex:1; min-width:200px; background:white; padding:20px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    footer { background:#0a3d62; color:white; text-align:center; padding:10px; }
+    .whatsapp {
+      position:fixed; bottom:20px; right:20px;
+      background:#25D366; color:white; padding:15px;
+      border-radius:50%; text-decoration:none; font-size:20px;
+    }
+    form { display:flex; flex-direction:column; gap:10px; max-width:400px; margin:auto; }
+    input, textarea { padding:10px; border:1px solid #ccc; border-radius:4px; }
+    button { background:#0a3d62; color:white; padding:10px; border:none; border-radius:4px; cursor:pointer; }
+    button:hover { background:#07406e; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div style="display:flex; align-items:center; gap:15px;">
+      <img src="assets/images/logo.png" alt="Logo DEKKO TECH">
+      <div>
+        <h1 style="margin:0; font-size:22px;">DEKKO TECH ENTERPRISE</h1>
+        <p style="margin:0; font-size:14px;">Servis Komputer & Desktop Profesional</p>
+      </div>
+    </div>
+
+    <!-- Navigation + WhatsApp + Book Repair -->
+    <div style="display:flex; align-items:center; gap:20px;">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#services">Servis</a>
+        <a href="#contact">Hubungi Kami</a>
+      </nav>
+      <div style="font-size:18px; font-weight:bold;">
+        📞 <a href="https://wa.me/60123456789" style="color:white; text-decoration:none;">+60 12-345 6789</a>
+      </div>
+      <a href="#contact" class="book-btn">Book Repair</a>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <div class="hero">
+    <img src="https://via.placeholder.com/1200x400.png?text=Servis+Komputer+Profesional" alt="Banner Servis">
+    <p>Kami menyediakan solusi IT moden untuk anda.</p>
   </div>
 
-  <!-- Nombor WhatsApp -->
-  <div style="font-size:18px; font-weight:bold;">
-    📞 <a href="https://wa.me/60123456789" style="color:white; text-decoration:none;">+60 12-345 6789</a>
+  <!-- Services Section -->
+  <div id="services" class="services">
+    <div class="card">
+      <h3>Diagnostik</h3>
+      <p>Pemeriksaan komputer & desktop untuk kenal pasti masalah.</p>
+    </div>
+    <div class="card">
+      <h3>Pemasangan</h3>
+      <p>Setup desktop baru dengan konfigurasi optimum.</p>
+    </div>
+    <div class="card">
+      <h3>Sokongan IT</h3>
+      <p>Bantuan rangkaian & troubleshooting sistem.</p>
+    </div>
+    <div class="card">
+      <h3>Penyelenggaraan</h3>
+      <p>Servis berkala untuk pastikan sistem sentiasa lancar.</p>
+    </div>
   </div>
-</header>
+
+  <!-- Contact Form -->
+  <div id="contact" style="padding:20px; text-align:center;">
+    <h2>Hubungi Kami</h2>
+    <p>Email: dekkotech@gmail.com | Telefon: +60-123456789</p>
+    <p><a href="https://facebook.com/dekkotech" target="_blank">Facebook DEKKO TECH</a></p>
+
+    <form action="mailto:dekkotech@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="nama" placeholder="Nama Anda" required>
+      <input type="email" name="email" placeholder="Email Anda" required>
+      <textarea name="mesej" rows="5" placeholder="Mesej Anda" required></textarea>
+      <button type="submit">Hantar</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 DEKKO TECH ENTERPRISE</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a class="whatsapp" href="https://wa.me/60123456789" target="_blank">💬</a>
+</body>
+</html>
